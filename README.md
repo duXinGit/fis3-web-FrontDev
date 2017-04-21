@@ -5,5 +5,6 @@
 ###### 检测是否安装成功<br>
     node -v
     npm -v
-### 2、npm install -g fis3 全局安装<br>
+### 2、全局安装<br>
+        npm install -g fis3
 导出到output目录下
