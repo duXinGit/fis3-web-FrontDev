@@ -1,0 +1,8 @@
+/*!static/common.css*/
+html{background-color:#FFF}
+/*!static/about.css*/
+body{background-color:#999;font-size:12px}
+/*!static/index.css*/
+body{background-color:#ccc}
+/*!static/test.less*/
+p span{color:#bebd7f}a:hover{background:#000;font-size:16px}dl{font-size:12px}li{background:url(/images/bankStorageTube_successIcon.png) no-repeat}
