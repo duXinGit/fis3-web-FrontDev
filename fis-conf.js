@@ -56,6 +56,13 @@ fis.match('*.js', {
     optimizer: fis.plugin('uglify-js')
 });
 
+/********************************************************** png **********************************************************/
+//压缩png
+fis.match('*.png', {
+    // fis-optimizer-png-compressor 插件进行压缩，已内置
+    optimizer: fis.plugin('png-compressor')
+});
+
 /********************************************************** html **********************************************************/
 fis.match('*.html', {
     //invoke fis-optimizer-html-minifier  需安装[npm install -g fis-optimizer-html-minifier]
