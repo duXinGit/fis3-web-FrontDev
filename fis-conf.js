@@ -55,3 +55,9 @@ fis.match('*.js', {
     // fis-optimizer-uglify-js 插件进行压缩，已内置
     optimizer: fis.plugin('uglify-js')
 });
+
+/***************************** html *****************************/
+fis.match('*.html', {
+    //invoke fis-optimizer-html-minifier  需安装[npm install -g fis-optimizer-html-minifier]
+    optimizer: fis.plugin('html-minifier')
+});
