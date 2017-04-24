@@ -57,6 +57,7 @@ fis.match('*.js', {
 });
 
 /********************************************************** images **********************************************************/
+//npm install -g fis-optimizer-imagemin
 fis.match('/images/(*.{jpg,png,gif})', {
     optimizer: fis.plugin('imagemin', {
         release: './output/images'
