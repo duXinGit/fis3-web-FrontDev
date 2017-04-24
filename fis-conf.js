@@ -1,4 +1,4 @@
-fis.match('/static/*', {
+fis.match('*.{js,css,png,jpg,gif}', {
   useHash: true
 });
 
@@ -8,7 +8,7 @@ fis.match('::packager', {
   })
 });
 
-/***************************** css *****************************/
+/********************************************************** css **********************************************************/
 fis.match('*.less', {
     // fis-parser-less 插件进行解析
     parser: fis.plugin('less'),
@@ -44,7 +44,7 @@ fis.match('*.{css,less}', {
     optimizer: fis.plugin('clean-css')
 });
 
-/***************************** js *****************************/
+/********************************************************** js **********************************************************/
 //合并js 到/static/aio.js
 fis.match('*.js', {
     packTo: 'static/aio.js'
@@ -56,7 +56,7 @@ fis.match('*.js', {
     optimizer: fis.plugin('uglify-js')
 });
 
-/***************************** html *****************************/
+/********************************************************** html **********************************************************/
 fis.match('*.html', {
     //invoke fis-optimizer-html-minifier  需安装[npm install -g fis-optimizer-html-minifier]
     optimizer: fis.plugin('html-minifier')
