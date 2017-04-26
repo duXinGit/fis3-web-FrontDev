@@ -56,6 +56,15 @@ fis.match('*.js', {
     optimizer: fis.plugin('uglify-js')
 });
 
+//按 packOrder（由小到大） 顺序合并
+fis.match('static/about.js', {
+    packOrder: -100
+});
+
+fis.match('static/index.js', {
+    packOrder: -99
+});
+
 /********************************************************** images **********************************************************/
 //npm install -g fis-optimizer-imagemin
 fis.match('/images/(*.{jpg,png,gif})', {
